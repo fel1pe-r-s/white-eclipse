@@ -15,6 +15,6 @@ RUN bun run build
 # Production stage - simplified for static serving using Bun's built-in server or just 'serve'
 # Since Bun can serve static files, we can write a tiny script or use 'bun x serve'
 # Let's use a lightweight approach: serve the dist folder
-CMD ["bun", "x", "serve", "dist", "-p", "8080"]
+CMD ["bun", "x", "serve", "dist", "-s", "-p", "8080"]
 
 EXPOSE 8080
